@@ -1,0 +1,136 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #fff;
+  color: #202124;
+  text-align: center;
+}
+
+/* Nav */
+nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding: 1rem 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 0.85rem;
+  color: #202124;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main - centered */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 6rem;
+}
+
+/* Logo */
+.logo {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #967bb6;
+  margin-bottom: 1.5rem;
+  letter-spacing: -2px;
+  text-align: center;
+}
+
+/* Search input */
+form input[type="text"] {
+  width: 500px;
+  max-width: 90vw;
+  padding: 0.75rem 1.2rem;
+  font-size: 1rem;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  outline: none;
+  display: block;
+  margin-bottom: 1.2rem;
+  box-shadow: none;
+}
+
+form input[type="text"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(66, 133, 244, 0.4);
+  border-color: transparent;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+button {
+  padding: 0.6rem 1.1rem;
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  color: #3c4043;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e8eaed;
+  border-color: #dadce0;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+  padding: 0.9rem 2rem;
+  font-size: 0.85rem;
+  color: #70757a;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+footer a {
+  color: #70757a;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .logo {
+    font-size: 3.5rem;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+}
